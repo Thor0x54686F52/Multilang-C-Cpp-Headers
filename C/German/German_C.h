@@ -72,8 +72,17 @@
 #define unsicher_Eingabe					scanf
 #define Datei_oeffnen						fopen
 #define Datei_schliessen					fclose
+#define Zeichen_lesen                       getchar
+#define Bildschirm_leeren()                 printf("\33c")
+
 
 #define ERFOLGREICH_BEENDET					EXIT_SUCCESS
 #define FEHLERHAFT_BEENDET					EXIT_FAILURE
+
+#include <time.h>
+#define Zeit    							time
+
+#include <locale.h>
+#define UTF_8_Setzen						setlocale(LC_ALL, "de_DE.utf-8")
 
 #endif
